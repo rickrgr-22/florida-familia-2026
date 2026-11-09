@@ -1,0 +1,688 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Florida en Familia 2026</title>
+<meta name="description" content="Itinerario familiar: Querétaro → Orlando → Miami, 29 nov – 5 dic 2026">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fbf7f1; --surface:#ffffff; --ink:#1d2433; --muted:#5d6678; --line:#e8e1d6;
+  --sea:#0e7c86; --sea-soft:#dff3f3; --sun:#f2a541; --sun-soft:#fdf0db; --coral:#e2595c; --coral-soft:#fde6e5;
+  --green:#2f8a4f; --green-soft:#e2f4e8; --shadow:0 1px 2px rgba(20,30,50,.06),0 6px 24px rgba(20,30,50,.06);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0f141c; --surface:#171e29; --ink:#eef1f6; --muted:#a3adbd; --line:#283244;
+    --sea:#4cc2c9; --sea-soft:#14303a; --sun:#f5b65f; --sun-soft:#3a2d17; --coral:#f07d7f; --coral-soft:#3b1f22;
+    --green:#5fc985; --green-soft:#16301f; --shadow:none;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0f141c; --surface:#171e29; --ink:#eef1f6; --muted:#a3adbd; --line:#283244;
+  --sea:#4cc2c9; --sea-soft:#14303a; --sun:#f5b65f; --sun-soft:#3a2d17; --coral:#f07d7f; --coral-soft:#3b1f22;
+  --green:#5fc985; --green-soft:#16301f; --shadow:none;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--sea);text-underline-offset:2px}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.15;margin:0}
+.wrap{max-width:980px;margin:0 auto;padding:0 16px}
+
+/* Hero */
+.hero{background:linear-gradient(160deg,#0e7c86 0%,#14a3a0 45%,#f2a541 100%);color:#fff;padding:56px 0 40px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;inset:auto -10% -60px -10%;height:120px;background:var(--bg);border-radius:50% 50% 0 0/100% 100% 0 0}
+.hero .kicker{font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:13px;opacity:.9}
+.hero h1{font-size:clamp(34px,7vw,60px);font-weight:800;margin:8px 0 10px}
+.hero p{font-size:18px;max-width:640px;margin:0;opacity:.95}
+.route{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px;position:relative;z-index:1}
+.route span{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.35);backdrop-filter:blur(4px);padding:6px 12px;border-radius:999px;font-weight:600;font-size:14px}
+
+/* Nav */
+nav.toc{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav.toc .wrap{display:flex;gap:6px;overflow-x:auto;padding:10px 16px;scrollbar-width:none}
+nav.toc a{white-space:nowrap;text-decoration:none;color:var(--ink);font-weight:600;font-size:14px;padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:var(--surface)}
+nav.toc a:hover{border-color:var(--sea);color:var(--sea)}
+
+section{padding:36px 0 8px}
+section>.wrap>h2{font-size:clamp(26px,4.5vw,34px);margin-bottom:6px}
+.lead{color:var(--muted);margin:0 0 18px}
+
+/* Cards & grids */
+.grid{display:grid;gap:14px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.g4{grid-template-columns:repeat(auto-fit,minmax(170px,1fr))}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:var(--shadow)}
+.card h3{font-size:20px;margin-bottom:6px}
+.stat .n{font-family:Fraunces,serif;font-size:28px;font-weight:800;color:var(--sea)}
+.stat .l{color:var(--muted);font-size:14px}
+.pill{display:inline-block;font-size:12px;font-weight:700;padding:3px 9px;border-radius:999px;letter-spacing:.02em}
+.p-sea{background:var(--sea-soft);color:var(--sea)}
+.p-sun{background:var(--sun-soft);color:#a8670b}
+:root[data-theme="dark"] .p-sun{color:var(--sun)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .p-sun{color:var(--sun)}}
+.p-coral{background:var(--coral-soft);color:var(--coral)}
+.p-green{background:var(--green-soft);color:var(--green)}
+.note{border-left:4px solid var(--sun);background:var(--sun-soft);padding:12px 14px;border-radius:0 12px 12px 0;margin:14px 0}
+.note.alert{border-color:var(--coral);background:var(--coral-soft)}
+.note.ok{border-color:var(--green);background:var(--green-soft)}
+ul.clean{list-style:none;padding:0;margin:0}
+ul.clean li{padding:6px 0;border-bottom:1px dashed var(--line)}
+ul.clean li:last-child{border-bottom:0}
+.muted{color:var(--muted)}
+.small{font-size:14px}
+
+/* Flights */
+.flight{display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:center}
+.flight .time{font-family:Fraunces,serif;font-size:26px;font-weight:800}
+.flight .mid{text-align:center;color:var(--muted);font-size:13px;position:relative}
+.flight .mid:before{content:"";display:block;height:2px;background:repeating-linear-gradient(90deg,var(--line) 0 6px,transparent 6px 10px);margin:8px 0}
+.flight .code{font-size:13px;color:var(--muted);font-weight:600}
+
+/* Days */
+.day{background:var(--surface);border:1px solid var(--line);border-radius:18px;margin:0 0 18px;box-shadow:var(--shadow);overflow:hidden}
+.day-head{display:flex;gap:14px;align-items:center;padding:16px 18px;border-bottom:1px solid var(--line)}
+.date{flex:none;width:62px;height:62px;border-radius:14px;background:var(--sea);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1}
+.date b{font-family:Fraunces,serif;font-size:26px}
+.date small{font-size:11px;text-transform:uppercase;letter-spacing:.06em;margin-top:2px}
+.day.miami .date{background:var(--coral)}
+.day.travel .date{background:var(--sun);color:#3a2604}
+.day-head h3{font-size:22px}
+.day-head .sub{color:var(--muted);font-size:14px}
+.timeline{list-style:none;margin:0;padding:8px 18px 4px}
+.timeline li{display:grid;grid-template-columns:62px 1fr;gap:12px;padding:10px 0;border-bottom:1px dashed var(--line)}
+.timeline li:last-child{border-bottom:0}
+.timeline .t{font-weight:700;color:var(--sea);font-size:14px;padding-top:2px}
+.day.miami .timeline .t{color:var(--coral)}
+.timeline .what b{display:block}
+.timeline .what span{color:var(--muted);font-size:14px}
+.day-foot{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;padding:12px 18px 18px}
+.box{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:10px 12px;font-size:14px}
+.box strong{display:block;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:2px}
+
+/* Tables */
+.tbl{width:100%;border-collapse:collapse;font-size:14px;background:var(--surface);border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+.tbl th,.tbl td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+.tbl th{background:var(--sea-soft);color:var(--ink);font-size:12px;text-transform:uppercase;letter-spacing:.05em}
+.tbl tr:last-child td{border-bottom:0}
+.tbl td.num{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+.tbl tfoot td{font-weight:700;background:var(--sun-soft)}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:14px}
+
+/* Checklist */
+.check li{display:flex;gap:10px;align-items:flex-start}
+.check input{margin-top:5px;width:18px;height:18px;accent-color:var(--sea);flex:none}
+
+/* Photos */
+.ph{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;background:var(--line);margin:0 0 12px}
+.card .ph{margin:-4px 0 12px}
+.dayimg{display:block;width:100%;height:190px;object-fit:cover;background:var(--line)}
+.photos{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:14px 0}
+.photos figure{margin:0}
+.photos img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;display:block;background:var(--line)}
+.photos figcaption{font-size:12px;color:var(--muted);margin-top:4px}
+/* Options */
+.opt-head{display:flex;align-items:center;gap:10px;margin:26px 0 10px}
+.opt-head h3{font-size:22px}
+.badge{font:700 12px Inter,sans-serif;padding:4px 10px;border-radius:999px;color:#fff;background:var(--sea)}
+.badge.b2{background:var(--coral)}
+.badge.eco{background:var(--green)}
+.cmp td:first-child{font-weight:600}
+.credit{font-size:11px;color:var(--muted)}
+footer{padding:36px 0 60px;color:var(--muted);font-size:13px}
+.theme-btn{position:fixed;right:14px;bottom:14px;z-index:20;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:8px 12px;font:600 13px Inter,sans-serif;box-shadow:var(--shadow);cursor:pointer}
+@media (max-width:560px){
+  .timeline li{grid-template-columns:52px 1fr}
+  .flight .time{font-size:22px}
+  .hero{padding-top:40px}
+}
+@media print{nav.toc,.theme-btn{display:none}.day{break-inside:avoid}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">Viaje familiar · Opción 1: 29 nov – 5 dic · Opción 2: 6 – 12 dic 2026</div>
+    <h1>Florida en Familia 🌴</h1>
+    <p>Querétaro → Orlando (Magic Kingdom y Universal) → Kennedy Space Center → Miami y sus playas → de regreso a Querétaro. 6 adultos y 2 niñas (6 y 8 años).</p>
+    <div class="route"><span>✈️ QRO</span><span>🏰 Orlando · 3 noches</span><span>🚀 Cabo Cañaveral</span><span>🏖️ Hollywood/Miami · 3 noches</span><span>✈️ MIA → QRO</span></div>
+  </div>
+</header>
+
+<nav class="toc"><div class="wrap">
+  <a href="#resumen">Resumen</a><a href="#opciones">Opción 1 vs 2</a><a href="#vuelos">Vuelos</a><a href="#hospedaje">Hospedaje</a><a href="#transporte">Camioneta</a><a href="#dias">Día por día</a><a href="#boletos">Boletos</a><a href="#extras">Más planes</a><a href="#presupuesto">Presupuesto</a><a href="#pendientes">Pendientes</a><a href="#tips">Consejos</a>
+</div></nav>
+
+<main>
+<!-- RESUMEN -->
+<section id="resumen"><div class="wrap">
+  <h2>El viaje en un vistazo</h2>
+  <p class="lead">7 días, 6 noches. Volamos a Orlando y regresamos desde Miami, así no hay que manejar de vuelta (≈3.5 h) y el vuelo sale más barato.</p>
+  <div class="grid g4">
+    <div class="card stat"><div class="n">~$15,100</div><div class="l">MXN por persona en vuelos (ida y vuelta, 1 escala)</div></div>
+    <div class="card stat"><div class="n">$1,347</div><div class="l">USD de hospedaje para los 8 (6 noches, 2 casas)</div></div>
+    <div class="card stat"><div class="n">$516</div><div class="l">USD de camioneta de 8 plazas (6 días, Orlando → Miami)</div></div>
+    <div class="card stat"><div class="n">~$880</div><div class="l">USD por persona en tierra (todo lo demás, estimado)</div></div>
+  </div>
+  <div class="note alert"><b>Para decidir en familia:</b> el lunes 30 Magic Kingdom abre todo el día (con luces y fuegos artificiales), pero se espera mucha gente (8–10 de 10). El martes 1 hay muy poca gente (3–4 de 10), aunque el parque cierra a las 6 pm y no hay fuegos artificiales. Si prefieren menos filas, inviertan los días: Universal el lunes 30 y Magic Kingdom el martes 1.</div>
+  <div class="note"><b>Fechas clave:</b> el <b>lunes 30 nov</b> vamos a Magic Kingdom porque el <b>1 dic</b> el parque cierra temprano (≈6 pm) por la fiesta de Navidad <i>Mickey's Very Merry Christmas Party</i>. Además, del <b>4 al 6 dic</b> es <b>Art Basel</b> en Miami Beach (mucha gente y estacionamiento caro), por eso la playa de South Beach va el <b>jueves 3</b>.</div>
+</div></section>
+
+<!-- OPCIONES -->
+<section id="opciones"><div class="wrap">
+  <h2>Dos opciones para elegir ⚖️</h2>
+  <p class="lead">Mismo plan de 7 días en las dos opciones. Cambian las fechas y el aeropuerto de salida. En la opción 2 los vuelos salen de la Ciudad de México en vuelo directo y se llega en autobús desde Querétaro.</p>
+  <div class="scroll"><table class="tbl cmp">
+    <thead><tr><th></th><th><span class="badge">OPCIÓN 1</span></th><th><span class="badge b2">OPCIÓN 2 · más económica</span></th></tr></thead>
+    <tbody>
+      <tr><td>Fechas</td><td>Dom 29 nov – Sáb 5 dic</td><td>Dom 6 dic – Sáb 12 dic</td></tr>
+      <tr><td>Salida y regreso</td><td>Aeropuerto de Querétaro (QRO)</td><td>Aeropuerto de la CDMX (AICM), con autobús QRO ⇄ AICM (≈ 3 h)</td></tr>
+      <tr><td>Vuelos</td><td>United, 1 escala en Houston</td><td><b>Volaris directo</b> (≈ 3 h de vuelo)</td></tr>
+      <tr><td>Vuelos + autobús por persona</td><td>≈ $15,100 MXN</td><td><b>≈ $8,830 MXN</b></td></tr>
+      <tr><td>Vuelos para los 8</td><td>≈ $120,800 MXN</td><td><b>≈ $70,600 MXN</b> (ahorro ≈ $50,000)</td></tr>
+      <tr><td>Hospedaje (6 noches, 8 personas)</td><td>$1,347 USD · económica $989</td><td>$1,305 USD · económica <b>$946</b></td></tr>
+      <tr><td>Camioneta de 8 plazas</td><td>$516 USD</td><td>$515 USD</td></tr>
+      <tr><td>Gente en los parques</td><td>Mucha el lunes (semana después de Thanksgiving)</td><td><b>Poca</b>: es de las semanas más tranquilas del año</td></tr>
+      <tr><td>Miami</td><td>Semana de Art Basel: más tráfico y gente</td><td>Art Basel ya terminó (6 dic): más tranquilo</td></tr>
+      <tr><td>Fiesta navideña de Disney</td><td>Agotada</td><td>Revisar disponibilidad (noches del 8, 10 y 11 dic)</td></tr>
+    </tbody>
+  </table></div>
+  <div class="note ok small"><b>Recomendación:</b> la <b>opción 2</b> ahorra ≈ $6,300 MXN por persona en vuelos, tiene menos gente en Disney y Universal y Miami está más tranquilo. A cambio, hay que hacer el trayecto a la CDMX en autobús.</div>
+  <div class="note small"><b>¿Quieren las fechas de la opción 1 pero más barato?</b> Volaris también vuela directo desde la CDMX el 29 nov (11:10 → 15:18, ≈ $4,969 MXN) y regresa de Miami el 5 dic (15:31 → 18:05, ≈ $3,327 MXN). Son ≈ $8,300 MXN por persona más autobús, casi lo mismo que la opción 2.</div>
+</div></section>
+
+<!-- VUELOS -->
+<section id="vuelos"><div class="wrap">
+  <h2>Vuelos ✈️</h2>
+  <div class="opt-head"><span class="badge">OPCIÓN 1</span><h3>Desde Querétaro · 29 nov – 5 dic</h3></div>
+  <p class="lead">Precios de Google Flights consultados el 9 nov 2026, por persona, en tarifa económica más baja. Los precios cambian a diario: <b>reservar cuanto antes</b> (es el fin de semana de Thanksgiving).</p>
+  <div class="grid g2">
+    <div class="card">
+      <span class="pill p-sea">IDA · Dom 29 nov</span>
+      <h3 style="margin-top:8px">United · Querétaro → Orlando</h3>
+      <div class="flight">
+        <div><div class="time">6:00</div><div class="code">QRO</div></div>
+        <div class="mid">1 escala · Houston (IAH) 2 h<br>6 h 32 min</div>
+        <div style="text-align:right"><div class="time">13:32</div><div class="code">MCO</div></div>
+      </div>
+      <p class="small muted" style="margin:10px 0 0">≈ <b>$9,838 MXN</b> por persona. Es el vuelo más temprano y el más barato con una escala que llega el mismo día. Migración se pasa en Houston.</p>
+    </div>
+    <div class="card">
+      <span class="pill p-coral">REGRESO · Sáb 5 dic</span>
+      <h3 style="margin-top:8px">United · Miami → Querétaro</h3>
+      <div class="flight">
+        <div><div class="time">16:59</div><div class="code">MIA</div></div>
+        <div class="mid">1 escala · Houston (IAH) 2 h 42 min<br>8 h</div>
+        <div style="text-align:right"><div class="time">23:59</div><div class="code">QRO</div></div>
+      </div>
+      <p class="small muted" style="margin:10px 0 0">≈ <b>$5,260 MXN</b> por persona (el mejor precio con máximo 1 escala). <b>Alternativa:</b> United 15:00 → 20:59, ≈ $6,151 MXN, para llegar más temprano.</p>
+    </div>
+  </div>
+  <div class="scroll" style="margin-top:14px"><table class="tbl">
+    <thead><tr><th>Opción comparada</th><th>Detalle</th><th class="num">Por persona</th><th class="num">8 personas</th></tr></thead>
+    <tbody>
+      <tr><td><b>✅ Recomendada:</b> United QRO→MCO + United MIA→QRO</td><td>Llegada 13:32 · regreso desde Miami, sin manejar de vuelta</td><td class="num">≈ $15,098</td><td class="num">≈ $120,800 MXN</td></tr>
+      <tr><td>Viva redondo QRO⇄MCO</td><td>Ida 6:11→13:40; regreso con <b>10.5 h de escala nocturna en Monterrey</b> y hay que volver de Miami a Orlando</td><td class="num">≈ $16,703</td><td class="num">≈ $133,600 MXN</td></tr>
+      <tr><td>Aeroméxico QRO→MCO</td><td>Sale 19:09 y llega al día siguiente 11:31 (se pierde un día)</td><td class="num">≈ $9,218 (ida)</td><td class="num">—</td></tr>
+    </tbody>
+  </table></div>
+  <div class="note alert small"><b>Equipaje:</b> la tarifa más baja de United (Basic Economy) puede no incluir maleta documentada y no deja elegir asiento. Antes de pagar, compara con "Economy" estándar o calcula ≈ $35–40 USD por maleta y tramo. Para sentar a las niñas junto a un adulto, conviene pagar Economy estándar al menos en los lugares de ellas y sus papás.</div>
+  <p class="small"><a href="https://www.google.com/travel/flights?q=One%20way%20flights%20from%20QRO%20to%20MCO%20on%202026-11-29&curr=MXN&hl=es" target="_blank" rel="noopener">Ver ida en Google Flights</a> · <a href="https://www.google.com/travel/flights?q=One%20way%20flights%20from%20MIA%20to%20QRO%20on%202026-12-05&curr=MXN&hl=es" target="_blank" rel="noopener">Ver regreso en Google Flights</a></p>
+
+  <div class="opt-head"><span class="badge b2">OPCIÓN 2</span><h3>Desde la CDMX, vuelos directos · 6 – 12 dic</h3></div>
+  <div class="grid g2">
+    <div class="card">
+      <span class="pill p-sea">IDA · Dom 6 dic</span>
+      <h3 style="margin-top:8px">Volaris · CDMX → Orlando (directo)</h3>
+      <div class="flight">
+        <div><div class="time">11:10</div><div class="code">MEX</div></div>
+        <div class="mid">Sin escalas<br>3 h 8 min</div>
+        <div style="text-align:right"><div class="time">15:18</div><div class="code">MCO</div></div>
+      </div>
+      <p class="small muted" style="margin:10px 0 0">≈ <b>$3,937 MXN</b> por persona. Autobús de Querétaro al aeropuerto de la CDMX a las ≈ 5:00 (Primera Plus o ETN, ≈ $500–650 MXN). <b>Alternativa:</b> Aeroméxico directo 7:05 → 11:38 por ≈ $3,971 MXN, ya con maleta de mano incluida, pero obliga a salir de Querétaro de madrugada.</p>
+    </div>
+    <div class="card">
+      <span class="pill p-coral">REGRESO · Sáb 12 dic</span>
+      <h3 style="margin-top:8px">Volaris · Miami → CDMX (directo)</h3>
+      <div class="flight">
+        <div><div class="time">15:31</div><div class="code">MIA</div></div>
+        <div class="mid">Sin escalas<br>3 h 34 min</div>
+        <div style="text-align:right"><div class="time">18:05</div><div class="code">MEX</div></div>
+      </div>
+      <p class="small muted" style="margin:10px 0 0">≈ <b>$3,691 MXN</b> por persona. Autobús de la CDMX a Querétaro a las ≈ 19:30; llegada ≈ 23:00.</p>
+    </div>
+  </div>
+  <div class="note alert small"><b>Volaris:</b> la tarifa básica solo incluye un artículo personal (mochila chica). La maleta documentada cuesta aparte (≈ $600–900 MXN por tramo si se paga al reservar; en el aeropuerto cuesta mucho más). Aun con una maleta por persona, la opción 2 sale más barata.</div>
+  <p class="small"><a href="https://www.google.com/travel/flights?q=One%20way%20flights%20from%20Mexico%20City%20to%20MCO%20on%202026-12-06&curr=MXN&hl=es" target="_blank" rel="noopener">Ver ida en Google Flights</a> · <a href="https://www.google.com/travel/flights?q=One%20way%20flights%20from%20MIA%20to%20Mexico%20City%20on%202026-12-12&curr=MXN&hl=es" target="_blank" rel="noopener">Ver regreso en Google Flights</a></p>
+</div></section>
+
+<!-- HOSPEDAJE -->
+<section id="hospedaje"><div class="wrap">
+  <h2>Hospedaje 🏡</h2>
+  <p class="lead">Busqué primero <b>Fiesta Americana</b>: Grupo Posadas no tiene hoteles en Florida (su red está en México y República Dominicana). Por eso comparé hoteles de 3 estrellas contra Airbnb. <b>Airbnb gana por mucho</b>: una casa completa para los 8 cuesta menos que dos cuartos de hotel, y trae cocina, alberca y lavadora.</p>
+  <div class="opt-head"><span class="badge">OPCIÓN 1</span><h3>29 nov – 5 dic · recomendadas</h3></div>
+  <div class="grid g2">
+    <div class="card">
+      <img class="ph" loading="lazy" referrerpolicy="no-referrer" src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTE5NTk0ODgyNTE0Mzk0MjMwMg%3D%3D/original/b3a6b80f-87e7-4c78-82ca-7bab4b488537.jpeg?im_w=720" alt="Villa en Storey Lake Resort">
+      <span class="pill p-sea">ORLANDO · 29 nov → 2 dic (3 noches)</span>
+      <h3 style="margin-top:8px">Villa en Storey Lake Resort, Kissimmee</h3>
+      <p class="small muted" style="margin:0 0 8px">⭐ 4.94 (154 reseñas) · Superanfitrión · 4 recámaras · 8 camas · 3 baños · capacidad 14</p>
+      <ul class="clean small">
+        <li>🏊 Alberca privada + resort con río lento, toboganes y bar junto a la alberca</li>
+        <li>📍 ≈ 15 min de Disney, ≈ 25 min de Universal y ≈ 25 min del aeropuerto MCO</li>
+        <li>💵 <b>$563 USD total</b> (≈ $70 USD por persona las 3 noches)</li>
+      </ul>
+      <p class="small" style="margin:10px 0 0"><a href="https://www.airbnb.mx/rooms/1195948825143942302?check_in=2026-11-29&check_out=2026-12-02&adults=6&children=2" target="_blank" rel="noopener">Ver en Airbnb →</a></p>
+      <p class="small muted" style="margin:6px 0 0">Alternativas: <a href="https://www.airbnb.mx/rooms/1293452916158810420?check_in=2026-11-29&check_out=2026-12-02&adults=6&children=2" target="_blank" rel="noopener">Casa temática Pokémon (4.92, $540)</a> — a las niñas les puede encantar · <a href="https://www.airbnb.mx/rooms/1431289914824026094?check_in=2026-11-29&check_out=2026-12-02&adults=6&children=2" target="_blank" rel="noopener">Resort 4 rec. con spa (4.87, $515)</a></p>
+    </div>
+    <div class="card">
+      <img class="ph" loading="lazy" referrerpolicy="no-referrer" src="https://a0.muscache.com/im/pictures/112d4e9d-5660-461d-8f8a-d2a43562ff6b.jpg?im_w=720" alt="Casa con alberca en Hollywood FL">
+      <span class="pill p-coral">MIAMI · 2 dic → 5 dic (3 noches)</span>
+      <h3 style="margin-top:8px">Casa con alberca junto al canal, Hollywood FL</h3>
+      <p class="small muted" style="margin:0 0 8px">⭐ 4.98 (429 reseñas) · Superanfitriona, 9 años · top 5 % de Airbnb · 3 recámaras · 5 camas · 2 baños · capacidad 8</p>
+      <ul class="clean small">
+        <li>🏊 Alberca privada, patio sobre el canal, kayak y mini‑golf (putting green)</li>
+        <li>📍 ≈ 10 min de Hollywood Beach, ≈ 35 min de South Beach y ≈ 30 min del aeropuerto MIA</li>
+        <li>💵 <b>$784 USD total</b> (≈ $98 USD por persona las 3 noches)</li>
+      </ul>
+      <p class="small" style="margin:10px 0 0"><a href="https://www.airbnb.mx/rooms/20433606?check_in=2026-12-02&check_out=2026-12-05&adults=6&children=2" target="_blank" rel="noopener">Ver en Airbnb →</a></p>
+      <p class="small muted" style="margin:6px 0 0">Alternativa con más baños: <a href="https://www.airbnb.mx/rooms/787907026873273518?check_in=2026-12-02&check_out=2026-12-05&adults=6&children=2" target="_blank" rel="noopener">Dúplex con alberca y billar en Fort Lauderdale (4.88, $840, 2.5 baños)</a></p>
+    </div>
+  </div>
+  <div class="opt-head"><span class="badge eco">OPCIÓN 1 · ECONÓMICA</span><h3>Ahorro ≈ $360 USD</h3></div>
+  <div class="grid g2">
+    <div class="card">
+      <img class="ph" loading="lazy" referrerpolicy="no-referrer" src="https://a0.muscache.com/im/pictures/hosting/Hosting-1730515031023521465/original/f0faf7df-5fa7-4c66-bf25-c5bbf3e85412.jpeg?im_w=720" alt="Casa en Emerald Island Resort">
+      <span class="pill p-sea">ORLANDO · 29 nov → 2 dic</span>
+      <h3 style="margin-top:8px">Casa en Emerald Island Resort, Kissimmee</h3>
+      <p class="small muted" style="margin:0 0 8px">⭐ 4.83 (18 reseñas) · 3 recámaras · 7 camas · 2.5 baños · capacidad 9</p>
+      <ul class="clean small"><li>🏊 Alberca y spa privados; el resort tiene minigolf</li><li>💵 <b>$401 USD total</b> (≈ $50 USD por persona)</li></ul>
+      <p class="small" style="margin:10px 0 0"><a href="https://www.airbnb.mx/rooms/1730515031023521465?check_in=2026-11-29&check_out=2026-12-02&adults=6&children=2" target="_blank" rel="noopener">Ver en Airbnb →</a></p>
+    </div>
+    <div class="card">
+      <img class="ph" loading="lazy" referrerpolicy="no-referrer" src="https://a0.muscache.com/im/pictures/miso/Hosting-671282518068523624/original/bfe4c7fc-e48a-42cd-a130-18bad689a2bf.jpeg?im_w=720" alt="Casa con alberca en Fort Lauderdale">
+      <span class="pill p-coral">MIAMI · 2 dic → 5 dic</span>
+      <h3 style="margin-top:8px">Casa con alberca en Fort Lauderdale</h3>
+      <p class="small muted" style="margin:0 0 8px">⭐ 4.7 (229 reseñas) · 3 recámaras · 3 camas · 2 baños · capacidad 8</p>
+      <ul class="clean small"><li>📍 A 5 min del aeropuerto de Fort Lauderdale y ≈ 45 min de South Beach</li><li>💵 <b>$588 USD total</b> (≈ $74 USD por persona)</li><li>⚠️ Solo tiene 3 camas: pregunten a la anfitriona si hay sofás cama o colchones inflables</li></ul>
+      <p class="small" style="margin:10px 0 0"><a href="https://www.airbnb.mx/rooms/671282518068523624?check_in=2026-12-02&check_out=2026-12-05&adults=6&children=2" target="_blank" rel="noopener">Ver en Airbnb →</a></p>
+    </div>
+  </div>
+
+  <div class="opt-head"><span class="badge b2">OPCIÓN 2</span><h3>6 – 12 dic · recomendadas</h3></div>
+  <div class="grid g2">
+    <div class="card">
+      <img class="ph" loading="lazy" referrerpolicy="no-referrer" src="https://a0.muscache.com/im/pictures/miso/Hosting-974921736477039404/original/fc2979a0-38ac-40c5-bfd0-72b11fb4856a.jpeg?im_w=720" alt="Casita Bonita Pool House">
+      <span class="pill p-sea">ORLANDO · 6 dic → 9 dic</span>
+      <h3 style="margin-top:8px">Casita Bonita Pool House, Kissimmee</h3>
+      <p class="small muted" style="margin:0 0 8px">⭐ 4.87 (166 reseñas) · 4 recámaras · 6 camas · 2 baños · capacidad 9</p>
+      <ul class="clean small"><li>🏊 Alberca privada, cerca de los parques</li><li>💵 <b>$491 USD total</b> (≈ $61 USD por persona)</li></ul>
+      <p class="small" style="margin:10px 0 0"><a href="https://www.airbnb.mx/rooms/974921736477039404?check_in=2026-12-06&check_out=2026-12-09&adults=6&children=2" target="_blank" rel="noopener">Ver en Airbnb →</a></p>
+    </div>
+    <div class="card">
+      <img class="ph" loading="lazy" referrerpolicy="no-referrer" src="https://a0.muscache.com/im/pictures/miso/Hosting-827590084625111836/original/d7a1b64e-4e4e-42e2-81ff-d856db7b046e.jpeg?im_w=720" alt="Aqua Tropics villa en Miami">
+      <span class="pill p-coral">MIAMI · 9 dic → 12 dic</span>
+      <h3 style="margin-top:8px">Aqua Tropics: villa con alberca tropical, Miami</h3>
+      <p class="small muted" style="margin:0 0 8px">⭐ 4.76 (172 reseñas) · 3 recámaras · 5 camas · 2.5 baños · capacidad 8</p>
+      <ul class="clean small"><li>📍 En Buena Vista, junto al Design District: a 5 min de Wynwood y ≈ 20 min de South Beach</li><li>💵 <b>$814 USD total</b> (≈ $102 USD por persona)</li></ul>
+      <p class="small" style="margin:10px 0 0"><a href="https://www.airbnb.mx/rooms/827590084625111836?check_in=2026-12-09&check_out=2026-12-12&adults=6&children=2" target="_blank" rel="noopener">Ver en Airbnb →</a></p>
+    </div>
+  </div>
+
+  <div class="opt-head"><span class="badge eco">OPCIÓN 2 · ECONÓMICA</span><h3>Ahorro ≈ $360 USD</h3></div>
+  <div class="grid g2">
+    <div class="card">
+      <img class="ph" loading="lazy" referrerpolicy="no-referrer" src="https://a0.muscache.com/im/pictures/miso/Hosting-912215082716896865/original/8f7f5918-97e8-4897-a309-a54f39afe82a.jpeg?im_w=720" alt="Casa en Regal Palms Resort">
+      <span class="pill p-sea">ORLANDO · 6 dic → 9 dic</span>
+      <h3 style="margin-top:8px">Casa moderna en Regal Palms Resort, Davenport</h3>
+      <p class="small muted" style="margin:0 0 8px">⭐ 4.75 (57 reseñas) · 4 recámaras · 5 camas · 3 baños · capacidad 8</p>
+      <ul class="clean small"><li>🏊 Resort con alberca y parque acuático; ≈ 20 min de Disney</li><li>💵 <b>$426 USD total</b> (≈ $53 USD por persona)</li></ul>
+      <p class="small" style="margin:10px 0 0"><a href="https://www.airbnb.mx/rooms/912215082716896865?check_in=2026-12-06&check_out=2026-12-09&adults=6&children=2" target="_blank" rel="noopener">Ver en Airbnb →</a></p>
+    </div>
+    <div class="card">
+      <img class="ph" loading="lazy" referrerpolicy="no-referrer" src="https://a0.muscache.com/im/pictures/miso/Hosting-1010946229677392138/original/dd7de377-333f-4ff1-ad1e-3e97c4d910ca.jpeg?im_w=720" alt="Oasis de Miami">
+      <span class="pill p-coral">MIAMI · 9 dic → 12 dic</span>
+      <h3 style="margin-top:8px">Oasis de Miami, Palmetto Estates</h3>
+      <p class="small muted" style="margin:0 0 8px">⭐ 4.87 (333 reseñas) · 3 recámaras · 4 camas · 2 baños · capacidad 10</p>
+      <ul class="clean small"><li>📍 Al sur de Miami, a 15 min del Zoo Miami y ≈ 35 min de South Beach</li><li>💵 <b>$520 USD total</b> (≈ $65 USD por persona)</li></ul>
+      <p class="small" style="margin:10px 0 0"><a href="https://www.airbnb.mx/rooms/1010946229677392138?check_in=2026-12-09&check_out=2026-12-12&adults=6&children=2" target="_blank" rel="noopener">Ver en Airbnb →</a></p>
+    </div>
+  </div>
+  <p class="small muted">La casa de Hollywood de la opción 1 no está disponible del 9 al 12 de diciembre.</p>
+
+  <div class="note small"><b>¿Por qué Hollywood y no Miami Beach?</b> Esa semana es Art Basel y los departamentos de 3 recámaras en Miami Beach cuestan <b>$1,200–$3,000 USD</b> por las 3 noches. Hollywood tiene su propia playa con malecón (Broadwalk), es tranquilo para las niñas y queda a media hora de todo. La diferencia es de <b>$400 USD o más</b>.</div>
+  <div class="scroll"><table class="tbl">
+    <thead><tr><th>Comparación (3 noches en Orlando)</th><th class="num">Costo aprox.</th><th>Comentario</th></tr></thead>
+    <tbody>
+      <tr><td><b>✅ Airbnb Storey Lake (los 8 juntos)</b></td><td class="num">$563 USD</td><td>Casa completa con cocina y alberca</td></tr>
+      <tr><td>Clarion Inn &amp; Suites Kissimmee (3★)</td><td class="num">$681 USD por cuarto</td><td>Harían falta 2 cuartos ≈ $1,360</td></tr>
+      <tr><td>Holiday Inn &amp; Suites Celebration (3★)</td><td class="num">$1,255 USD por cuarto</td><td>Harían falta 2 cuartos ≈ $2,500</td></tr>
+    </tbody>
+  </table></div>
+  <p class="small muted">Las dos casas tienen opción de cancelación gratuita según la política de cada anuncio: revísala antes de pagar.</p>
+</div></section>
+
+<!-- TRANSPORTE -->
+<section id="transporte"><div class="wrap">
+  <h2>Camioneta 🚐</h2>
+  <div class="grid g2">
+    <div class="card">
+      <img class="ph" loading="lazy" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/2018_Honda_Odyssey_Touring_3.5L%2C_front_8.18.19.jpg/960px-2018_Honda_Odyssey_Touring_3.5L%2C_front_8.18.19.jpg" alt="Honda Odyssey">
+      <h3>Honda Odyssey o similar · 8 plazas</h3>
+      <p class="small muted" style="margin:0 0 6px">Opción 1: $516 USD (29 nov – 5 dic) · Opción 2: $515 USD (6 – 12 dic). La foto es ilustrativa.</p>
+      <ul class="clean small">
+        <li>📍 Se recoge en el <b>aeropuerto de Orlando (MCO)</b> el 29 nov y se entrega en el <b>aeropuerto de Miami (MIA)</b> el 5 dic, sin volver a Orlando</li>
+        <li>💵 <b>$516 USD total</b> por 6 días con cargo de entrega en otra ciudad incluido · cancelación gratuita (Kayak, vía Expedia/Priceline)</li>
+        <li>🧳 Cabe equipaje para ≈ 5 maletas grandes: <b>viajen ligeros</b> (maleta mediana + mochila por persona)</li>
+      </ul>
+      <p class="small" style="margin:10px 0 0"><a href="https://www.kayak.com/cars/MCO/MIA/2026-11-29-15h/2026-12-05-12h?sort=price_a&fs=carclass=van,fullsuv,minivan" target="_blank" rel="noopener">Ver opciones en Kayak →</a></p>
+    </div>
+    <div class="card">
+      <h3>Lo que hay que saber</h3>
+      <ul class="clean small">
+        <li>🚫 No hay vans de 12 pasajeros que se puedan entregar en otra ciudad. Si llevan mucho equipaje, el <b>plan B</b> es una minivan de 7 plazas ($438) + un auto compacto ($214) ≈ $650 USD en total.</li>
+        <li>🪑 <b>Asientos elevadores (boosters):</b> desde los 6 años la ley de Florida solo exige cinturón, pero los expertos recomiendan booster hasta 1.45 m de estatura. Rentarlos cuesta ≈ $10–15 USD al día; comprarlos en Walmart cuesta ≈ $25 USD cada uno.</li>
+        <li>🛣️ <b>Peajes:</b> casi todas las autopistas cobran. Acepten el programa de peajes de la arrendadora (o lleven SunPass); calculen ≈ $40–60 USD en total.</li>
+        <li>🪪 Se necesita licencia vigente (la mexicana sirve) y tarjeta de crédito del conductor principal. Agreguen a un segundo conductor.</li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<!-- DÍAS -->
+<section id="dias"><div class="wrap">
+  <h2>Itinerario día por día 🗓️</h2>
+  <p class="lead">Horarios sugeridos. Los de los parques deben confirmarse en la app oficial una semana antes.</p>
+  <div class="note small"><b>Opción 2:</b> es el mismo plan, una semana después y en los mismos días de la semana (dom 6 → sáb 12 dic). Sumen 7 días a cada fecha. Solo cambian el primer y el último día (autobús a la CDMX y vuelos de Volaris), como se indica en cada uno.</div>
+
+  <!-- DÍA 1 -->
+  <article class="day travel">
+    <div class="day-head"><div class="date"><b>29</b><small>dom</small></div>
+      <div><h3>Llegada a Orlando</h3><div class="sub">Vuelo, camioneta, súper y Disney Springs de noche · Opción 2: dom 6 dic</div></div></div>
+    <img class="dayimg" loading="lazy" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Disney_Springs_Ariel_View.jpg/960px-Disney_Springs_Ariel_View.jpg" alt="Disney Springs">
+    <ul class="timeline">
+      <li><div class="t">3:00</div><div class="what"><b>Llegar al Aeropuerto de Querétaro</b><span>3 h antes por ser vuelo internacional. Pasaportes y visas a la mano.</span></div></li>
+      <li><div class="t">6:00</div><div class="what"><b>United QRO → Houston → Orlando</b><span>En Houston se pasa migración y aduana; recojan y vuelvan a documentar las maletas.</span></div></li>
+      <li><div class="t">13:32</div><div class="what"><b>Llegada a Orlando (MCO)</b><span>Recoger la camioneta en el nivel 1 de la terminal (≈ 45 min).</span></div></li>
+      <li><div class="t">15:00</div><div class="what"><b>Súper en Publix o Walmart</b><span>Desayunos para 3 días, agua, botanas para los parques, protector solar y boosters si no los rentaron.</span></div></li>
+      <li><div class="t">16:00</div><div class="what"><b>Check-in en Storey Lake</b><span>Desempacar y alberca o río lento del resort con las niñas.</span></div></li>
+      <li><div class="t">18:30</div><div class="what"><b>Disney Springs 🎄</b><span>Entrada y estacionamiento gratis. Decoración navideña, tiendas de LEGO y Disney, y música en vivo. Dormir temprano: mañana es Disney.</span></div></li>
+    </ul>
+    <div class="day-foot">
+      <div class="box"><strong>Opción 2 (6 dic)</strong>Autobús de Querétaro a las ≈ 5:00 al aeropuerto de la CDMX, vuelo Volaris 11:10 → Orlando 15:18. Recoger la camioneta y hacer el súper; Disney Springs de noche.</div>
+      <div class="box"><strong>Comida</strong>En el aeropuerto de Houston durante la escala.</div>
+      <div class="box"><strong>Cena</strong><b>Chicken Guy!</b> o <b>Earl of Sandwich</b> en Disney Springs (≈ $15–18 USD por persona).</div>
+      <div class="box"><strong>Costo del día</strong>≈ $150 USD de súper + cena para el grupo.</div>
+    </div>
+  </article>
+
+  <!-- DÍA 2 -->
+  <article class="day">
+    <div class="day-head"><div class="date"><b>30</b><small>lun</small></div>
+      <div><h3>Magic Kingdom 🏰</h3><div class="sub">El mejor parque de Disney para niñas de 6 y 8 años, con decoración de Navidad · Opción 2: lun 7 dic</div></div></div>
+    <img class="dayimg" loading="lazy" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Cinderella_Castle%2C_Magic_Kingdom_%282026%29.jpg/960px-Cinderella_Castle%2C_Magic_Kingdom_%282026%29.jpg" alt="Castillo de Cenicienta, Magic Kingdom">
+    <ul class="timeline">
+      <li><div class="t">7:00</div><div class="what"><b>Salir de la casa</b><span>≈ 20 min al estacionamiento (Transportation &amp; Ticket Center); de ahí monorriel o ferry al parque, ≈ 20 min.</span></div></li>
+      <li><div class="t">8:00</div><div class="what"><b>Entrada al abrir el parque</b><span>Primero <b>Peter Pan's Flight</b> y <b>Seven Dwarfs Mine Train</b> (las filas más largas del día). Luego Fantasyland: Dumbo, la Sirenita, "it's a small world" y el carrusel.</span></div></li>
+      <li><div class="t">11:30</div><div class="what"><b>Comida temprana</b><span>Pidan desde la app (Mobile Order) para no hacer fila.</span></div></li>
+      <li><div class="t">12:30</div><div class="what"><b>Frontierland, Adventureland y Liberty Square</b><span>Big Thunder Mountain (estatura mínima 102 cm), Piratas del Caribe, Jungle Cruise y Haunted Mansion. <b>Tiana's Bayou Adventure está cerrada por remodelación hasta el 17 dic</b>, y Carousel of Progress también está cerrada.</span></div></li>
+      <li><div class="t">15:00</div><div class="what"><b>Desfile "Festival of Fantasy"</b><span>Aparten lugar 20 min antes sobre Main Street o Frontierland.</span></div></li>
+      <li><div class="t">16:00</div><div class="what"><b>Tomorrowland</b><span>Buzz Lightyear, Astro Orbiter, Monsters Inc. Laugh Floor y el TRON si les da la estatura (122 cm).</span></div></li>
+      <li><div class="t">18:00</div><div class="what"><b>Luces navideñas del castillo</b><span>El Castillo de Cenicienta se ilumina con su decoración de Navidad: buen momento para la foto familiar.</span></div></li>
+      <li><div class="t">20:00</div><div class="what"><b>Fuegos artificiales "Happily Ever After"</b><span>Véanlos desde Main Street o el puente hacia Tomorrowland y salgan antes de que termine para evitar la multitud del monorriel.</span></div></li>
+    </ul>
+    <div class="day-foot">
+      <div class="box"><strong>Comida</strong><b>Pecos Bill Tall Tale Inn</b> (fajitas y burritos) o <b>Columbia Harbour House</b> (≈ $16–20 USD por persona).</div>
+      <div class="box"><strong>Cena</strong><b>Cosmic Ray's Starlight Café</b> (hamburguesas y pollo, ≈ $15–18 USD por persona).</div>
+      <div class="box"><strong>Para ahorrar filas (muy recomendado)</strong>Este lunes se espera mucha gente (8–10 de 10). Compren el <b>Lightning Lane Multi Pass</b> (≈ $30–40 USD por persona) en la app My Disney Experience <b>el viernes 27 nov a las 7:00 am, hora de Florida</b> (3 días antes): se agota.</div>
+    </div>
+  </article>
+
+  <!-- DÍA 3 -->
+  <article class="day">
+    <div class="day-head"><div class="date"><b>1</b><small>mar</small></div>
+      <div><h3>Universal Studios Florida 🎬</h3><div class="sub">Minions, Harry Potter, DreamWorks y el desfile navideño de Macy's · Opción 2: mar 8 dic</div></div></div>
+    <img class="dayimg" loading="lazy" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/USF_Entrance.jpg/960px-USF_Entrance.jpg" alt="Entrada de Universal Studios Florida">
+    <ul class="timeline">
+      <li><div class="t">7:45</div><div class="what"><b>Salir de la casa</b><span>≈ 25 min. Estacionamiento en los edificios de Universal (≈ $35 USD); caminar por CityWalk hasta la entrada.</span></div></li>
+      <li><div class="t">8:30</div><div class="what"><b>Diagon Alley (Harry Potter)</b><span>Primero <b>Escape from Gringotts</b>; luego recorran el callejón. Las varitas interactivas hacen "magia" en los aparadores.</span></div></li>
+      <li><div class="t">10:30</div><div class="what"><b>Minion Land</b><span>Despicable Me Minion Mayhem y Villain‑Con Minion Blast, que es interactivo y a las niñas les encanta.</span></div></li>
+      <li><div class="t">12:00</div><div class="what"><b>Comida</b><span>The Leaky Cauldron, el restaurante de Harry Potter (fish &amp; chips, pastel de carne y cerveza de mantequilla).</span></div></li>
+      <li><div class="t">13:30</div><div class="what"><b>DreamWorks Land y E.T.</b><span>Shrek, Kung Fu Panda y Trolls están pensados para niños; E.T. Adventure es un clásico.</span></div></li>
+      <li><div class="t">15:30</div><div class="what"><b>Simpsons Ride, Men in Black y Kang &amp; Kodos</b><span>Kwik‑E‑Mart y la dona gigante de Lard Lad para la foto.</span></div></li>
+      <li><div class="t">17:30</div><div class="what"><b>Desfile navideño "Universal's Holiday Parade featuring Macy's"</b><span>Globos gigantes al estilo del desfile de Nueva York. El horario se confirma en la app de Universal.</span></div></li>
+      <li><div class="t">19:00</div><div class="what"><b>Cena en CityWalk y regreso</b></div></li>
+    </ul>
+    <div class="day-foot">
+      <div class="box"><strong>Comida</strong><b>Leaky Cauldron</b> (≈ $18–22 USD por persona).</div>
+      <div class="box"><strong>Cena</strong><b>Antojitos</b>, <b>Bigfire</b> o <b>Hot Dog Hall of Fame</b> en CityWalk (≈ $15–25 USD por persona).</div>
+      <div class="box"><strong>Mejora opcional</strong>Boleto <b>Park‑to‑Park</b> (≈ +$60 USD por persona) para subir al Hogwarts Express hacia Islands of Adventure y ver a <b>El Grinch</b> en Seuss Landing.</div>
+    </div>
+  </article>
+
+  <!-- DÍA 4 -->
+  <article class="day travel">
+    <div class="day-head"><div class="date"><b>2</b><small>mié</small></div>
+      <div><h3>Kennedy Space Center 🚀 y camino a Miami</h3><div class="sub">El lugar desde donde despegan los cohetes, de paso hacia el sur · Opción 2: mié 9 dic</div></div></div>
+    <img class="dayimg" loading="lazy" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Apollo_Saturn_V_Center_at_Kennedy_Space_Center.jpg/960px-Apollo_Saturn_V_Center_at_Kennedy_Space_Center.jpg" alt="Cohete Saturno V en el Kennedy Space Center">
+    <ul class="timeline">
+      <li><div class="t">8:00</div><div class="what"><b>Check-out y salida al este</b><span>≈ 1 h por la SR‑528 (de cuota) hasta el Kennedy Space Center.</span></div></li>
+      <li><div class="t">9:15</div><div class="what"><b>Kennedy Space Center Visitor Complex</b><span>El transbordador <b>Atlantis</b>, el tour en autobús al cohete <b>Saturno V</b> (Apollo), el Rocket Garden y Planet Play, un área de juegos espacial para niños. Revisen si ese día hay lanzamiento.</span></div></li>
+      <li><div class="t">12:30</div><div class="what"><b>Comida en el complejo</b></div></li>
+      <li><div class="t">14:30</div><div class="what"><b>Manejar a Hollywood, FL</b><span>≈ 2 h 45 min por la I‑95 (sin cuota la mayor parte). Parada técnica a la mitad, en Vero Beach o Port St. Lucie.</span></div></li>
+      <li><div class="t">17:30</div><div class="what"><b>Check-in en la casa de Hollywood</b><span>Súper rápido en Publix y alberca.</span></div></li>
+      <li><div class="t">19:00</div><div class="what"><b>Cena y paseo por el Hollywood Beach Broadwalk</b><span>Un malecón de 4 km frente al mar, ideal para caminar con niñas.</span></div></li>
+    </ul>
+    <div class="day-foot">
+      <div class="box"><strong>Comida</strong><b>Orbit Café</b> o <b>Moon Rock Café</b> en el Kennedy (≈ $15–18 USD por persona).</div>
+      <div class="box"><strong>Cena</strong><b>Taco Beach Shack</b> o una de las terrazas del Broadwalk (≈ $18–25 USD por persona).</div>
+      <div class="box"><strong>Si prefieren ahorrar</strong>Omitan el Kennedy (≈ $600 USD para el grupo), salgan directo por el Florida Turnpike (≈ 3 h) y pasen la tarde en Hollywood Beach.</div>
+    </div>
+  </article>
+
+  <!-- DÍA 5 -->
+  <article class="day miami">
+    <div class="day-head"><div class="date"><b>3</b><small>jue</small></div>
+      <div><h3>Miami Beach y South Beach 🏖️</h3><div class="sub">La playa famosa, las casetas de salvavidas y el Art Deco · Opción 2: jue 10 dic</div></div></div>
+    <img class="dayimg" loading="lazy" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/South_Beach%2C_Miami22.jpg/960px-South_Beach%2C_Miami22.jpg" alt="South Beach, Miami">
+    <ul class="timeline">
+      <li><div class="t">9:00</div><div class="what"><b>Salir a Miami Beach</b><span>≈ 40 min. Estacionar en un estacionamiento municipal (7th St o 13th St Garage, tope ≈ $20 USD al día). En la calle cuesta $4 USD la hora y se paga con la app ParkMobile o PayByPhone. No estacionen en zonas de residentes: la grúa cuesta ≈ $471 USD. Es semana de arte en Miami, así que salgan temprano: cruzar el puente a Miami Beach puede tomar 60–90 min por la tarde.</span></div></li>
+      <li><div class="t">9:45</div><div class="what"><b>Playa en Lummus Park</b><span>Arena blanca, agua turquesa (≈ 24 °C) y las casetas de salvavidas de colores para las fotos. Hay baños y regaderas públicas.</span></div></li>
+      <li><div class="t">12:30</div><div class="what"><b>Comida y caminata por Ocean Drive</b><span>Edificios Art Deco, la mansión de Versace (por fuera) y helado.</span></div></li>
+      <li><div class="t">14:30</div><div class="what"><b>Española Way y Lincoln Road</b><span>Una calle peatonal de estilo español y un andador comercial.</span></div></li>
+      <li><div class="t">16:30</div><div class="what"><b>South Pointe Park</b><span>Muelle, juegos infantiles y pasto. Desde aquí se ven pasar los cruceros al atardecer (≈ 17:30).</span></div></li>
+      <li><div class="t">18:30</div><div class="what"><b>Cena y regreso a Hollywood</b></div></li>
+    </ul>
+    <div class="day-foot">
+      <div class="box"><strong>Comida</strong><b>La Sandwicherie</b> (sándwiches franceses, ≈ $12–15 USD) o <b>Big Pink</b> (familiar, ≈ $20–25 USD por persona).</div>
+      <div class="box"><strong>Cena</strong><b>Flanigan's</b>, una cadena local favorita de las familias (≈ $18–22 USD por persona).</div>
+      <div class="box"><strong>Ojo</strong>Eviten los restaurantes de Ocean Drive que ofrecen bebidas gigantes: cobran $30 USD o más por coctel más propina incluida.</div>
+    </div>
+  </article>
+
+  <!-- DÍA 6 -->
+  <article class="day miami">
+    <div class="day-head"><div class="date"><b>4</b><small>vie</small></div>
+      <div><h3>Everglades, Little Havana y Wynwood 🐊</h3><div class="sub">Lanchas con hélice, cocodrilos, cafecito cubano y murales · Opción 2: vie 11 dic</div></div></div>
+    <img class="dayimg" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Air_boat.jpg" alt="Airboat en los Everglades">
+    <ul class="timeline">
+      <li><div class="t">9:00</div><div class="what"><b>Paseo en airboat por los Everglades</b><span><b>Sawgrass Recreation Park</b> (≈ 25 min de la casa): lancha de 1 h y exhibición de caimanes. Lleven gorra; el ruido es fuerte (dan protectores de oídos).</span></div></li>
+      <li><div class="t">12:30</div><div class="what"><b>Comida en Little Havana</b><span>Restaurante <b>Versailles</b>, un clásico cubano. Luego caminen por la Calle Ocho, el Parque del Dominó y la heladería <b>Azúcar</b>.</span></div></li>
+      <li><div class="t">15:30</div><div class="what"><b>Wynwood Walls</b><span>Murales gigantes al aire libre; las calles de alrededor son gratis. Habrá mucha gente por Art Basel, así que vayan temprano.</span></div></li>
+      <li><div class="t">17:30</div><div class="what"><b>Bayside Marketplace</b><span>Opcional: paseo en barco de 90 min por la bahía para ver las casas de los famosos (≈ $40 USD adulto).</span></div></li>
+      <li><div class="t">19:30</div><div class="what"><b>Cena y regreso a Hollywood</b><span>Dejen las maletas listas esta noche.</span></div></li>
+    </ul>
+    <div class="day-foot">
+      <div class="box"><strong>Comida</strong><b>Versailles</b> (≈ $20–25 USD por persona). Prueben el cafecito y los pastelitos de guayaba.</div>
+      <div class="box"><strong>Cena</strong>Bayside (<b>Bubba Gump</b> o <b>Hard Rock</b>) o en Hollywood para no manejar tarde.</div>
+      <div class="box"><strong>Costo del día</strong>Airboat ≈ $260 USD para el grupo + Wynwood ≈ $90 USD + comidas.</div>
+    </div>
+  </article>
+
+  <!-- DÍA 7 -->
+  <article class="day travel">
+    <div class="day-head"><div class="date"><b>5</b><small>sáb</small></div>
+      <div><h3>Mañana de playa y regreso a casa</h3><div class="sub">Hollywood Beach → aeropuerto de Miami → Querétaro · Opción 2: sáb 12 dic</div></div></div>
+    <img class="dayimg" loading="lazy" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Hollywood_Beach_%281%29.jpg/960px-Hollywood_Beach_%281%29.jpg" alt="Hollywood Beach">
+    <ul class="timeline">
+      <li><div class="t">8:30</div><div class="what"><b>Desayuno y última playa</b><span>Hollywood Beach a 10 min: 2 horas de arena y mar sin prisas.</span></div></li>
+      <li><div class="t">11:00</div><div class="what"><b>Check-out</b><span>Confirmen la hora con la anfitriona.</span></div></li>
+      <li><div class="t">12:00</div><div class="what"><b>Comida cerca del aeropuerto y gasolina</b><span>Devuelvan la camioneta con el tanque lleno.</span></div></li>
+      <li><div class="t">13:30</div><div class="what"><b>Entregar la camioneta en el Rental Car Center de MIA</b><span>Tomen el tren MIA Mover a la terminal (5 min).</span></div></li>
+      <li><div class="t">16:59</div><div class="what"><b>United MIA → Houston → Querétaro</b><span>Llegada a las 23:59. Acuerden quién recoge al grupo en QRO.</span></div></li>
+    </ul>
+    <div class="day-foot">
+      <div class="box"><strong>Comida</strong><b>Pollo Tropical</b> o <b>Chipotle</b> camino al aeropuerto (≈ $12–15 USD por persona).</div>
+      <div class="box"><strong>Opción 2 (12 dic)</strong>Volaris Miami 15:31 → CDMX 18:05; entreguen la camioneta a las 12:30. Autobús de la CDMX a Querétaro a las ≈ 19:30.</div>
+      <div class="box"><strong>Si eligen el vuelo de 15:00</strong>Entreguen la camioneta a las 12:00 y cambien la playa por un desayuno tranquilo.</div>
+    </div>
+  </article>
+</div></section>
+
+<!-- BOLETOS / DISPONIBILIDAD -->
+<section id="boletos"><div class="wrap">
+  <h2>Boletos y disponibilidad 🎟️</h2>
+  <p class="lead">Precios aproximados por persona más impuestos, verificados el 9 nov 2026. Disney y Universal cobran según la fecha: el precio exacto aparece en el calendario oficial al comprar.</p>
+  <div class="scroll"><table class="tbl" id="tabla-boletos">
+    <thead><tr><th>Atracción</th><th>Fecha</th><th>Estado</th><th class="num">Adulto</th><th class="num">Niña (3–9)</th><th>¿Reservar?</th></tr></thead>
+    <tbody>
+      <tr><td><b>Magic Kingdom</b> · 1 día, 1 parque</td><td>Lun 30 nov</td><td><span class="pill p-green">Abierto día completo</span><br><span class="small muted">No hay fiesta navideña esa noche</span></td><td class="num">≈ $169–199</td><td class="num">≈ $164–194</td><td>Sí, compra en línea + reservación de parque. <a href="https://disneyworld.disney.go.com/es-us/admission/tickets/" target="_blank" rel="noopener">Sitio oficial</a></td></tr>
+      <tr><td><b>Universal Studios Florida</b> · 1 día, 1 parque</td><td>Mar 1 dic</td><td><span class="pill p-green">Abierto</span><br><span class="small muted">Temporada navideña 14 nov – 3 ene</span></td><td class="num">≈ $139–159</td><td class="num">≈ $134–154</td><td>Sí, en línea (más barato que en taquilla). <a href="https://www.universalorlando.com/web/es/us/tickets-packages/park-tickets" target="_blank" rel="noopener">Sitio oficial</a></td></tr>
+      <tr><td><b>Kennedy Space Center</b></td><td>Mié 2 dic</td><td><span class="pill p-green">Abierto diario</span></td><td class="num">$77</td><td class="num">$67</td><td>Recomendado en línea. Estacionamiento $15. <a href="https://www.kennedyspacecenter.com/" target="_blank" rel="noopener">Sitio oficial</a></td></tr>
+      <tr><td><b>Airboat · Sawgrass Recreation Park</b></td><td>Vie 4 dic</td><td><span class="pill p-green">Abierto diario</span></td><td class="num">≈ $35–49</td><td class="num">≈ $25</td><td>Recomendado para grupos de 8; confirmen el precio por teléfono o en la web. Es privado, así que no se paga la entrada del Parque Nacional (que cobra $100 USD extra por extranjero mayor de 16). <a href="https://www.evergladestours.com/" target="_blank" rel="noopener">Sitio oficial</a></td></tr>
+      <tr><td><b>Wynwood Walls</b></td><td>Vie 4 dic</td><td><span class="pill p-sun">Mucha gente (Art Basel)</span></td><td class="num">≈ $12</td><td class="num">Gratis (&lt;12)</td><td>Boleto con fecha y hora. Opcional; los murales de la calle son gratis. <a href="https://thewynwoodwalls.com/" target="_blank" rel="noopener">Sitio oficial</a></td></tr>
+      <tr><td><b>Disney Springs · Playas · Little Havana · South Pointe</b></td><td>Varios</td><td><span class="pill p-green">Gratis</span></td><td class="num">$0</td><td class="num">$0</td><td>Solo estacionamiento</td></tr>
+      <tr><td><b>Mickey's Very Merry Christmas Party</b> (opcional)</td><td>29 nov, 1, 3 y 4 dic</td><td><span class="pill p-coral">AGOTADA</span><br><span class="small muted">Según WDWNT y BlogMickey</span></td><td class="num">≈ $209–219</td><td class="num">mismo</td><td>No disponible. Ventaja: el 30 nov habrá menos gente (3–4 de 10) en la semana después de Thanksgiving.</td></tr>
+    </tbody>
+  </table></div>
+  <div class="note small"><b>Consejo:</b> los revendedores autorizados, como <b>Undercover Tourist</b>, suelen vender boletos de Disney y Universal $10–25 USD más baratos por persona; con 8 personas el ahorro puede ser de ≈ $150 USD. Cómprenlos solo en sitios autorizados, nunca en Marketplace ni en reventa.</div>
+</div></section>
+
+<!-- EXTRAS -->
+<section id="extras"><div class="wrap">
+  <h2>Más planes que podrían gustarles ✨</h2>
+  <p class="lead">Los lugares del itinerario y opciones extra por si hay tiempo, energía o cambio de planes.</p>
+  <div class="photos">
+    <figure><img loading="lazy" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Disney_Springs_Ariel_View.jpg/960px-Disney_Springs_Ariel_View.jpg" alt="Disney Springs"><figcaption>Disney Springs</figcaption></figure>
+    <figure><img loading="lazy" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/STS132_Atlantis_undocking2_%28cropped%29.jpg/960px-STS132_Atlantis_undocking2_%28cropped%29.jpg" alt="Transbordador Atlantis"><figcaption>Atlantis (en el Kennedy Space Center)</figcaption></figure>
+    <figure><img loading="lazy" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Ocean_drive_day_2009j.JPG/960px-Ocean_drive_day_2009j.JPG" alt="Ocean Drive"><figcaption>Ocean Drive, South Beach</figcaption></figure>
+    <figure><img loading="lazy" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Little_Havana_Dominos_Park.JPG/960px-Little_Havana_Dominos_Park.JPG" alt="Parque del Dominó, Little Havana"><figcaption>Parque del Dominó, Little Havana</figcaption></figure>
+    <figure><img loading="lazy" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Wynwood_Walls_Miami_Florida_October_2013.jpg/960px-Wynwood_Walls_Miami_Florida_October_2013.jpg" alt="Wynwood Walls"><figcaption>Wynwood Walls</figcaption></figure>
+    <figure><img loading="lazy" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Bayside%2C_Miami%2C_Florida_June_2021_-_03.jpg/960px-Bayside%2C_Miami%2C_Florida_June_2021_-_03.jpg" alt="Bayside Marketplace"><figcaption>Bayside Marketplace</figcaption></figure>
+    <figure><img loading="lazy" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Sunset_over_the_River_of_Grass%2C_NPSphoto%2C_G.Gardner_%289255157507%29.jpg/960px-Sunset_over_the_River_of_Grass%2C_NPSphoto%2C_G.Gardner_%289255157507%29.jpg" alt="Everglades al atardecer"><figcaption>Everglades</figcaption></figure>
+    <figure><img loading="lazy" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Nice_blue_house_on_Hollywood_Beach_Broadwalk%2C_Florida%2C_USA._-_panoramio.jpg/960px-Nice_blue_house_on_Hollywood_Beach_Broadwalk%2C_Florida%2C_USA._-_panoramio.jpg" alt="Hollywood Beach Broadwalk"><figcaption>Hollywood Beach Broadwalk</figcaption></figure>
+  </div>
+  <div class="grid g2">
+    <div class="card"><span class="pill p-sea">ORLANDO</span>
+      <ul class="clean small" style="margin-top:8px">
+        <li>🎡 <b>Old Town Kissimmee</b>: feria con juegos mecánicos y caminata, gratis entrar. A 10 min de la casa; buena para la noche del 29.</li>
+        <li>🐊 <b>Gatorland</b> (≈ $35 USD): caimanes, tirolesa y un show divertido. Es el plan B si llueve poco.</li>
+        <li>🎄 <b>Gaylord Palms – Christmas</b>: esculturas de hielo y nieve navideñas (de pago).</li>
+        <li>🛍️ <b>Orlando Vineland Premium Outlets</b>: a 10 min de Disney.</li>
+        <li>🎡 <b>ICON Park</b>: la rueda de la fortuna de 120 m en International Drive, mejor de noche.</li>
+      </ul></div>
+    <div class="card"><span class="pill p-coral">MIAMI / HOLLYWOOD</span>
+      <ul class="clean small" style="margin-top:8px">
+        <li>🦒 <b>Zoo Miami</b>: uno de los mejores zoológicos de EUA y muy bueno para las niñas (≈ $30 USD).</li>
+        <li>🏝️ <b>Key Biscayne / Crandon Park</b>: playa tranquila sin olas, perfecta para niñas.</li>
+        <li>🔬 <b>Frost Science Museum</b>: acuario en 3 niveles y planetario. Es el plan si llueve.</li>
+        <li>🏛️ <b>Vizcaya Museum &amp; Gardens</b>: mansión italiana con jardines frente a la bahía. Cierra los martes y necesita boleto con hora.</li>
+        <li>🍦 <b>Jaxson's Ice Cream Parlor</b> (Dania Beach): una heladería clásica junto a Hollywood con el famoso "Kitchen Sink".</li>
+      </ul></div>
+  </div>
+</div></section>
+
+<!-- PRESUPUESTO -->
+<section id="presupuesto"><div class="wrap">
+  <h2>Presupuesto estimado 💵</h2>
+  <p class="lead">Para los 8 viajeros. En dólares, salvo los vuelos (en pesos).</p>
+  <div class="scroll"><table class="tbl">
+    <thead><tr><th>Concepto</th><th>Detalle</th><th class="num">Total grupo</th><th class="num">Por persona</th></tr></thead>
+    <tbody>
+      <tr><td>✈️ Vuelos</td><td>United QRO→MCO + MIA→QRO (sin maletas documentadas)</td><td class="num">≈ $120,800 MXN</td><td class="num">≈ $15,100 MXN</td></tr>
+      <tr><td>🏡 Hospedaje</td><td>Airbnb Orlando $563 + Hollywood $784</td><td class="num">$1,347</td><td class="num">$168</td></tr>
+      <tr><td>🚐 Camioneta</td><td>Odyssey de 8 plazas, 6 días</td><td class="num">$516</td><td class="num">$65</td></tr>
+      <tr><td>⛽ Gasolina, peajes y estacionamientos</td><td>≈ 1,000 km + Disney, Universal, Miami Beach y KSC</td><td class="num">≈ $260</td><td class="num">≈ $33</td></tr>
+      <tr><td>🏰 Magic Kingdom</td><td>6 adultos + 2 niñas, con impuestos</td><td class="num">≈ $1,450</td><td class="num">≈ $181</td></tr>
+      <tr><td>🎬 Universal Studios</td><td>6 adultos + 2 niñas, con impuestos</td><td class="num">≈ $1,250</td><td class="num">≈ $156</td></tr>
+      <tr><td>🚀 Kennedy Space Center</td><td>Opcional</td><td class="num">≈ $620</td><td class="num">≈ $78</td></tr>
+      <tr><td>🐊 Airboat + Wynwood</td><td></td><td class="num">≈ $350</td><td class="num">≈ $44</td></tr>
+      <tr><td>🍔 Comidas</td><td>Desayuno en casa + comida y cena fuera (≈ $45 USD por persona al día)</td><td class="num">≈ $1,900</td><td class="num">≈ $240</td></tr>
+      <tr><td>🛒 Súper, boosters e imprevistos</td><td></td><td class="num">≈ $400</td><td class="num">≈ $50</td></tr>
+    </tbody>
+    <tfoot><tr><td colspan="2">Total en tierra (USD)</td><td class="num">≈ $8,140</td><td class="num">≈ $1,017</td></tr></tfoot>
+  </table></div>
+  <h3 style="margin:22px 0 10px">Comparación de totales</h3>
+  <div class="scroll"><table class="tbl">
+    <thead><tr><th>Escenario (8 personas)</th><th class="num">Vuelos + autobús</th><th class="num">En tierra</th><th class="num">Por persona</th></tr></thead>
+    <tbody>
+      <tr><td><span class="badge">1</span> Opción 1 · casas recomendadas</td><td class="num">≈ $120,800 MXN</td><td class="num">≈ $8,140 USD</td><td class="num">≈ $15,100 MXN + $1,017 USD</td></tr>
+      <tr><td><span class="badge eco">1</span> Opción 1 · casas económicas</td><td class="num">≈ $120,800 MXN</td><td class="num">≈ $7,780 USD</td><td class="num">≈ $15,100 MXN + $973 USD</td></tr>
+      <tr><td><span class="badge b2">2</span> Opción 2 · casas recomendadas</td><td class="num">≈ $70,600 MXN</td><td class="num">≈ $8,100 USD</td><td class="num">≈ $8,830 MXN + $1,012 USD</td></tr>
+      <tr><td><span class="badge eco">2</span> <b>Opción 2 · casas económicas</b></td><td class="num"><b>≈ $70,600 MXN</b></td><td class="num"><b>≈ $7,740 USD</b></td><td class="num"><b>≈ $8,830 MXN + $967 USD</b></td></tr>
+    </tbody>
+  </table></div>
+  <p class="small muted">Sin maletas documentadas. Sin el Kennedy Space Center se ahorran otros ≈ $620 USD en cualquier escenario. El autobús QRO ⇄ CDMX está estimado en ≈ $1,200 MXN por persona, ida y vuelta.</p>
+  <p class="small muted">Opción 1 sin Kennedy Space Center: el total baja a ≈ $7,520 USD (≈ $940 USD por persona). Las niñas pagan casi lo mismo que un adulto en parques y vuelos. No incluye seguro de viaje, souvenirs ni el Lightning Lane.</p>
+</div></section>
+
+<!-- PENDIENTES -->
+<section id="pendientes"><div class="wrap">
+  <h2>Pendientes por reservar ✅</h2>
+  <p class="lead">En orden de urgencia. Las palomitas solo se guardan en tu teléfono.</p>
+  <div class="card"><ul class="clean check" id="checklist">
+    <li><input type="checkbox" id="c1"><label for="c1"><b>Vuelos (esta semana):</b> el fin de semana de Thanksgiving los precios suben rápido. Compren los 8 en una misma reservación.</label></li>
+    <li><input type="checkbox" id="c2"><label for="c2"><b>Airbnb de Orlando y de Hollywood:</b> son de los mejor calificados y se ocupan.</label></li>
+    <li><input type="checkbox" id="c3"><label for="c3"><b>Camioneta de 8 plazas</b> con cancelación gratuita: resérvenla ya, quedan pocas.</label></li>
+    <li><input type="checkbox" id="c4"><label for="c4"><b>Boletos de Magic Kingdom (30 nov)</b> y reservación de parque en la app My Disney Experience.</label></li>
+    <li><input type="checkbox" id="c5"><label for="c5"><b>Boletos de Universal (1 dic)</b>: decidir si conviene el Park‑to‑Park.</label></li>
+    <li><input type="checkbox" id="c6"><label for="c6"><b>Kennedy Space Center y airboat</b> en línea.</label></li>
+    <li><input type="checkbox" id="c7"><label for="c7"><b>Documentos:</b> pasaporte y visa de EUA vigentes de los 8. Las niñas necesitan los suyos; si viajan sin alguno de sus papás, lleven un permiso notarial.</label></li>
+    <li><input type="checkbox" id="c8"><label for="c8"><b>Seguro de viaje con gastos médicos</b>: en EUA una consulta de urgencias cuesta miles de dólares.</label></li>
+    <li><input type="checkbox" id="c9"><label for="c9"><b>Descargar apps:</b> My Disney Experience, Universal Orlando, United y Airbnb. Activar roaming o comprar eSIM.</label></li>
+  </ul></div>
+</div></section>
+
+<!-- TIPS -->
+<section id="tips"><div class="wrap">
+  <h2>Consejos prácticos 💡</h2>
+  <div class="grid g2">
+    <div class="card"><h3>🌤️ Clima</h3><p class="small" style="margin:0">Fines de noviembre: 15–27 °C en Orlando y 20–28 °C en Miami. Mañanas frescas (lleven chamarra ligera) y tardes de playa. Poca lluvia.</p></div>
+    <div class="card"><h3>💳 Pagos y propinas</h3><p class="small" style="margin:0">Casi todo se paga con tarjeta; usen una sin comisión por compras en el extranjero. En restaurantes con mesero se deja <b>18–20 %</b> de propina; en comida rápida, nada.</p></div>
+    <div class="card"><h3>👧 Con las niñas</h3><p class="small" style="margin:0">Tomen una foto de cada niña al llegar al parque (para saber qué ropa traían) y pongan el teléfono de un adulto en su pulsera o brazo. Acuerden un punto de reunión fijo en cada parque.</p></div>
+    <div class="card"><h3>🎒 Qué llevar al parque</h3><p class="small" style="margin:0">Batería portátil, protector solar, gorras, botella de agua (en Disney y Universal dan agua gratis con hielo en los restaurantes), impermeable ligero y snacks. No se permiten carriolas grandes ni bastones para selfie.</p></div>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  Itinerario preparado el 9 de noviembre de 2026. Los precios son aproximados y pueden cambiar; confirma siempre en los sitios oficiales antes de pagar.<br>
+  Fuentes: Google Flights, Kayak, Airbnb, Google Hoteles, Walt Disney World, Universal Orlando, Art Basel y blogs especializados (WDWNT, TouringPlans, WDWMagic).<br>
+  Fotos de las casas: Airbnb. Fotos de los lugares y de la camioneta: Wikimedia Commons (licencias CC, sus autores).
+</div></footer>
+
+<button class="theme-btn" id="themeBtn" aria-label="Cambiar tema">🌓 Tema</button>
+<script>
+(function(){
+  var root=document.documentElement, btn=document.getElementById('themeBtn');
+  function get(k){try{return localStorage.getItem(k)}catch(e){return null}}
+  function set(k,v){try{localStorage.setItem(k,v)}catch(e){}}
+  var saved=get('fl-theme'); if(saved) root.setAttribute('data-theme',saved);
+  btn.addEventListener('click',function(){
+    var cur=root.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+    var next=cur==='dark'?'light':'dark'; root.setAttribute('data-theme',next); set('fl-theme',next);
+  });
+  document.querySelectorAll('#checklist input').forEach(function(cb){
+    if(get('fl-'+cb.id)==='1') cb.checked=true;
+    cb.addEventListener('change',function(){ set('fl-'+cb.id, cb.checked?'1':'0'); });
+  });
+})();
+</script>
+</body>
+</html>
